@@ -1,0 +1,23 @@
+encoder:
+  seg_dim: 128
+  image_dim: 512
+  coarsening_factor: 1
+  quantize_step: 0.0005
+  threshold: 0.9
+
+decoder:
+  conditional_scale: 2.5
+  guidance_scale: 12
+  control_scale: 0.7
+  steps: 200
+  repeat: 8
+  prompt: "photo, detailed, high resolution, clear details"
+  negative_prompt: "blurry, low resolution, blurred"
+
+misc:
+  quality_parameter: 5
+  name: "image_intro"
+  data_dir: "/home/tobordin/compactdisk/users/tobordin/hierachical_coding/src/cherry/"
+  cache_dir: "/home/tobordin/compactdisk/users/tobordin/hierachical_coding/src/cache/"
+  save_dir: "/home/tobordin/compactdisk/users/tobordin/hierachical_coding/src/out/"
+  verbose: True
