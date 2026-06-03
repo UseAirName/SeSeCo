@@ -30,8 +30,9 @@ misc:
   save_dir: "./output_folder/" #Path to the output folder
   verbose: True
 ```
+and add your hugging face token in main: line 86
 
-And run simply using:
+Then run simply using:
 ```commandline
 python main.py -c config.py
 ```
